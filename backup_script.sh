@@ -15,5 +15,6 @@ BACKUP_NAME="backup-${TIMESTAMP}"
 # Copy the directory to the backup location
 cp -a "${SOURCE_DIRECTORY}" "${BACKUP_DIRECTORY}/${BACKUP_NAME}"
 
+#print out text stating backup has been created
 echo "Backup of ${SOURCE_DIRECTORY} was created at ${BACKUP_DIRECTORY}/${BACKUP_NAME}"
 
