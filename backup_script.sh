@@ -1,8 +1,10 @@
 #!/bin/bash
 
+#Make a backup of a directory with a time stamp
+
 # Prompt user for directories
-read -p "Enter the source directory: " SOURCE_DIRECTORY
-read -p "Enter the backup directory: " BACKUP_DIRECTORY
+read -p "Enter the source directory path: " SOURCE_DIRECTORY
+read -p "Enter the backup directory path: " BACKUP_DIRECTORY
 
 # Create a timestamp
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
