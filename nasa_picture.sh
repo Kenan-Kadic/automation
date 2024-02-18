@@ -10,10 +10,10 @@ download_apod() {
     wget -q -P "$temp_dir" "$image_url"
 }
 
-# Function to set the desktop background
+# Function to set the desktop background using AppleScript
 set_background() {
     local image_path=$(ls "$temp_dir"/*.jpg)
-    gsettings set org.gnome.desktop.background picture-uri "file://$image_path"
+    osascript -e "tell application \"System Events\" to set picture of every desktop to \"$image_path\""
 }
 
 # Create temporary directory if it doesn't exist
